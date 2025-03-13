@@ -1,16 +1,17 @@
 
 public class Main {
     public static void main(String[] args){
-       final float PI = 3.14F;
-       //AN EXPRESSION IS APIECE OF CODE THA PRODUCES A VALUE
-        int x = 1;
-        x += 2;
-        System.out.println(x);
-
-        //order of operation: (), */, +-
-        int y = (10 + 3) * 2;
+       //implicit casting
+        //byte > short > int > long > float > double
+       double x = 1.1;
+       int y = (int)x + 2; //explicit casting
 
         System.out.println(y);
+        String c = "1.1";
+        double yy = Double.parseDouble(c) + 2;
+        System.out.println(yy);
+
+
 
     }
 }
