@@ -1,13 +1,16 @@
-import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args){
-        int[] numbers = new int[5];
-        numbers [0] = 1;
-        numbers [2] =2;
-        numbers [4] = 6;
-        Arrays.sort(numbers);
+       final float PI = 3.14F;
+       //AN EXPRESSION IS APIECE OF CODE THA PRODUCES A VALUE
+        int x = 1;
+        x += 2;
+        System.out.println(x);
 
-        System.out.println(Arrays.toString(numbers));
+        //order of operation: (), */, +-
+        int y = (10 + 3) * 2;
+
+        System.out.println(y);
+
     }
 }
