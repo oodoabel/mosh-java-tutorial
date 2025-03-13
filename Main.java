@@ -1,8 +1,13 @@
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args){
-        String message = "Hello world" + "!!";
-        System.out.println(message.indexOf("Sky"));
-        System.out.println(message.trim());
+        int[] numbers = new int[5];
+        numbers [0] = 1;
+        numbers [2] =2;
+        numbers [4] = 6;
+        Arrays.sort(numbers);
+
+        System.out.println(Arrays.toString(numbers));
     }
 }
