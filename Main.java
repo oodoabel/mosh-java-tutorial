@@ -1,9 +1,12 @@
 import java.text.NumberFormat;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args){
-        String result = NumberFormat.getPercentInstance().format(0.6);
-        System.out.println(result);
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Name: ");
+        String name = scanner.nextLine().trim();
+        System.out.println("You are "+name);
 
     }
 }
