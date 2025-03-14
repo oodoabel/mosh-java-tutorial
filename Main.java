@@ -3,10 +3,18 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args){
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Name: ");
-        String name = scanner.nextLine().trim();
-        System.out.println("You are "+name);
+        int x = 1;
+        int y = 1;
+        System.out.println(x != y);
 
+        int temperature = 22;
+        boolean isWarm = temperature > 20 && temperature < 30;
+        System.out.println(isWarm);
+
+        boolean hasHighIncome = true;
+        boolean hasGoodConduct = true;
+        boolean hasCriminalRecord = true;
+        boolean isEligible = (hasHighIncome && hasGoodConduct) && !hasCriminalRecord;
+        System.out.println(isEligible);
     }
 }
