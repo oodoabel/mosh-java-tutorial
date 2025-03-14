@@ -1,7 +1,8 @@
+import java.text.NumberFormat;
 
 public class Main {
     public static void main(String[] args){
-       int result = (int) Math.round(Math.random() * 100);
+        String result = NumberFormat.getPercentInstance().format(0.6);
         System.out.println(result);
 
     }
