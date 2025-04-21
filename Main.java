@@ -1,17 +1,29 @@
-import java.text.NumberFormat;
 import java.util.Scanner;
 
-public class Main {
-    public static void main(String[] args){
-       int temp = 50;
-       if (temp > 32) {
-           System.out.println("Its a hot day");
-           System.out.println("Drink  water");
-       }
-       else if (temp > 20 && temp <= 32) {
-           System.out.println("Its a great day");
-       }
-       else
-            System.out.println("Cool day");
+public class Main{
+    public static void main (String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Enter your first integer");
+        int firstInt = input.nextInt();
+
+        System.out.println("Enter your Second integer");
+        int secondInt = input.nextInt();
+
+        int sum = firstInt+secondInt;
+
+        int difference = firstInt-secondInt;
+
+        int product = firstInt*secondInt;
+
+        int quotient = firstInt/secondInt;
+
+        System.out.println("Sum: "+ sum);
+        System.out.println("Difference: "+ difference);
+        System.out.println("Product: "+ product);
+        System.out.println("Quotient: "+ quotient);
+
+
+
     }
 }
